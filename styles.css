@@ -122,10 +122,50 @@ h1,h2,h3,h4 {
   margin: 0 auto;
   padding: 0 24px;
 }
-.nav-brand { display: flex; flex-direction: column; gap: 1px; }
+.nav-brand { display: flex; align-items: center; gap: 12px; }
+.logo-icon {
+  position: relative;
+  width: 44px; height: 44px;
+  min-width: 44px;
+  background: linear-gradient(145deg, #1a3150, #0D1B2A);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,.35);
+}
+.logo-icon svg { width: 22px !important; height: 22px !important; flex-shrink: 0; }
+.logo-dot {
+  position: absolute;
+  bottom: 7px; right: 7px;
+  width: 7px; height: 7px;
+  background: var(--gold);
+  border-radius: 50%;
+}
+.logo-text { display: flex; flex-direction: column; gap: 1px; }
+.logo-name {
+  font-family: 'DM Sans', sans-serif;
+  font-size: .82rem;
+  font-weight: 700;
+  color: var(--offwhite);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.logo-sub {
+  font-family: 'DM Sans', sans-serif;
+  font-size: .68rem;
+  font-weight: 500;
+  color: var(--gold);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+/* keep nav-logo for footer */
 .nav-logo {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: var(--offwhite);
   letter-spacing: .02em;
