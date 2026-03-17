@@ -1,4 +1,4 @@
-/* TranslatPro Focșani — main.js */
+/* Ciochină D. Liliana Mihaela — Traducător Autorizat Focșani — main.js */
 
 /* ─── Navbar scroll effect ─── */
 const navbar = document.getElementById('navbar');
